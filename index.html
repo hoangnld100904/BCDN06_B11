@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h2>Bài tập JS 12-13</h2>
+    
+    <div>
+        <h2>Bài 1 - Tính lương nhân viên</h2>
+        <h3>Lương 1 ngày 100k</h3>
+        <label for="Bai1_dayValue">Ngày làm</label>
+        <input id="Bai1_dayValue" type="text" value="" placeholder="Số ngày làm" >
+        <button onclick="tinhLuong()">Tính tiền</button>
+        <p>Tiền lương: <span id="Tienluong">0</span>VND</p>
+    </div>
+    <div>
+        <h2>Bài 2 - Giá trị trung bình</h2>
+        <input type="number" id="bai2_Value1" placeholder="Giá trị 1" class="form-inline w-15">
+        <input type="number" id="bai2_Value2" placeholder="Giá trị 2" class="form-inline w-15">
+        <input type="number" id="bai2_Value3" placeholder="Giá trị 3" class="form-inline w-15">
+        <input type="number" id="bai2_Value4" placeholder="Giá trị 4" class="form-inline w-15">
+        <input type="number" id="bai2_Value5" placeholder="Giá trị 5" class="form-inline w-15">
+        <button onclick="tbc()">Tính</button>
+        <p>Kết quả: <span id="Bai2_output"></span></p>
+    </div>
+    <div>
+        <h2>Bài 3 - Quy đổi USD - VND</h2>
+        <input type="number" id="bai3_Value" placeholder="Nhập số tiền Dolar">
+        <button onclick="QuyDoiUSD()">Tính</button>
+        <p>Kết quả: <span id="bai3_Output"></span>VND</p>
+    </div>
+    <div>
+        <h2>Bài 4 - Chu vi, Diện tích</h2>
+        <input type="number" id="bai4_chieurong" placeholder="Chiều rộng" class="form-inline w-30">
+        <input type="number" id="bai4_chieudai" placeholder="Chiều dài" class="form-inline w-30">
+        <button onclick="Bai4()">Tính</button>
+        <p>Chu vi: <span id="chuVi"></span></p>
+        <p>Diện tích: <span id="dienTich"></span></p>
+    </div>
+    <div>
+        <h2>Bài 5 - Tính tổng 2 ký số</h2>
+        <input type="number" id="bai5_value" placeholder="Nhap so can tinh" class="w-25">
+        <button onclick="Bai5()">Tính</button>
+        <p>Kết quả: <span id="bai5_output"></span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
